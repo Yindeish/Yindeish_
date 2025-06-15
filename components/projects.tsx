@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
+import {Link} from 'next/link'
 
 export function Projects() {
   const projects = [
@@ -78,10 +79,12 @@ export function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="flex gap-2">
+                <Link href={project.image} target="_blank">
                 <Button size="sm" className="flex-1">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Live Demo
                 </Button>
+                  </Link>
                 <Button variant="outline" size="sm" className="flex-1">
                   <Github className="mr-2 h-4 w-4" />
                   Code
