@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
-import {Link} from 'next/link'
+import Link from 'next/link'
 
 export function Projects() {
   const projects = [
