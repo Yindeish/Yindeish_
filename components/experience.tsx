@@ -5,41 +5,69 @@ import { CalendarDays, MapPin } from "lucide-react"
 export function Experience() {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      period: "2023 - Present",
+      title: "Mobile and Web Developer",
+      company: "CoinStick",
+      location: "On-site",
+      period: "June, 2025 - Present",
       description:
-        "Leading development of scalable web applications, mentoring junior developers, and implementing best practices for code quality and performance.",
-      technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS"],
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Digital Agency Co.",
-      location: "Lagos, Nigeria",
-      period: "2022 - 2023",
-      description:
-        "Developed and maintained multiple client projects, collaborated with design teams, and optimized application performance.",
-      technologies: ["Vue.js", "Express.js", "MongoDB", "Docker"],
+        "Mobile and Web Developer",
+      technologies: ["Next.js", "TypeScript", "Redux toolkit", "React Native"],
     },
     {
       title: "Frontend Developer",
-      company: "StartupXYZ",
+      company: "Meerath",
       location: "Lagos, Nigeria",
-      period: "2021 - 2022",
+      period: "May, 2025 - Present",
       description:
         "Built responsive user interfaces, implemented design systems, and worked closely with UX/UI designers to create exceptional user experiences.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Figma"],
+      technologies: ["NextJS", "TypeScript", "Tailwind CSS", "Figma"],
     },
     {
-      title: "Junior Developer",
-      company: "Local Tech Hub",
-      location: "Lagos, Nigeria",
-      period: "2020 - 2021",
+      title: "Fullstack Developer",
+      company: "Tfare",
+      location: "Remote",
+      period: "MAug, 2024 - June, 2025",
+      description:
+        "Built responsive user interfaces, implemented design systems, and worked closely with UX/UI designers to create exceptional user experiences.",
+      technologies: ["React Native" , 'MongoDB' , 'Redux toolkit' , 'Supabase' , 'TypeScript' , 'Cloudinary' , 'Amazon Web Services (AWS)'],
+    },
+    {
+      title: "Frontend Developer",
+      company: "InBrandPr",
+      location: "Remote",
+      period: "Nov, 2024 - June, 2025",
       description:
         "Started my professional journey, learned industry best practices, and contributed to various web development projects.",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      technologies: ["GCP", "React Native", "TypeScript", "Supabase", "Firebase"],
     },
+    {
+      title: "Frontend Developer",
+      company: "Peerhub",
+      location: "Remote",
+      period: "Sep, 2023 - Jul, 2024",
+      description:
+        `Participated in meetings , with provider companies (e.g silas), and reviews in the course of the product developement .
+        Engaged in product development architecture (experience flow and state management)
+
+. Built and maintained the company's web apps and third-parties products
+
+. Engaged in budget planning on resources (technical) management with the management team.
+        `,
+      technologies: ["NextJs", "TypeScript"],
+    },
+    {
+      title: "Fullstack Developer",
+      company: "Yabatech Webometrics",
+      location: "Remote",
+      period: "Sep, 2023 - Jul, 2024",
+      description:
+        `Commited a rebuild and redesign of the school website and API
+
+. Code Reviews and meetings engagements
+        `,
+      technologies: ['Next js' , 'Prisma ORM' , 'MySQL' , 'Express.js' , 'Redux toolkit'],
+    },
+
   ]
 
   return (

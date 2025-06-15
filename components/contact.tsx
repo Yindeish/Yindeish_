@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
 import { useState } from "react"
+import Link from "next/link"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -35,14 +36,14 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "adam.adeshina@example.com",
-      href: "mailto:adam.adeshina@example.com",
+      value: "adeshinaadam03@gmail.com",
+      href: "mailto:adeshinaadam03@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+234 XXX XXX XXXX",
-      href: "tel:+234XXXXXXXXX",
+      value: "+234 8169562814",
+      href: "tel:+2348169562814",
     },
     {
       icon: MapPin,
@@ -91,50 +92,14 @@ export function Contact() {
           </div>
 
           {/* Contact Form */}
-          <Card>
+          <Card className="flex flex-col">
             <CardHeader>
-              <CardTitle>Send a Message</CardTitle>
-              <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
+              <CardTitle className="text-center">Let's connect and thrive together</CardTitle>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} required />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <Button type="submit" className="w-full">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
-                </Button>
-              </form>
+            <CardContent className="flex-1 flex items-center justify-center">
+              <Link href="https://www.linkedin.com/in/adam-adeshina-47b4a4246/" target="_blank">
+              <img className="w-[13em] h-[13em] rounded-full" src="https://media.licdn.com/dms/image/v2/D4D35AQGLLfIrpuN-FQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1693264205219?e=1750629600&v=beta&t=G11gFow0IHmmKEPpM5clASAXBw2rBWfZUM5HplIJo8A" alt="" />
+              </Link>
             </CardContent>
           </Card>
         </div>

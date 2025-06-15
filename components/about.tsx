@@ -30,9 +30,9 @@ export function About() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          {/* <p className="text-muted-foreground max-w-2xl mx-auto">
             I'm a passionate full-stack developer with a love for creating innovative solutions
-          </p>
+          </p> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -40,16 +40,10 @@ export function About() {
             <h3 className="text-2xl font-semibold mb-6">My Story</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                With a strong foundation in both frontend and backend development, I specialize in creating seamless
-                user experiences backed by robust, scalable architectures.
+                Adam Adeshina, aliased with Yindeish, is a full-stack (web and mobile) developer and a student. He has 5 years of professional experience in full-stack development of web and mobile applications of the tech space. 
               </p>
               <p>
-                My journey in tech has been driven by curiosity and a constant desire to learn. I enjoy tackling complex
-                problems and turning ideas into reality through code.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
-                or sharing knowledge with the developer community.
+               He has also worked with many teams (product designers, backend developers, and product managers) in building prospective products from ideation to publishing and consumption by users.
               </p>
             </div>
           </div>

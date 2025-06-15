@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +18,6 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
@@ -27,13 +27,13 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl">Adam Adeshina</div>
+          <Link href={'/'}>
+            <div className="font-bold text-xl">Yindeish</div></Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

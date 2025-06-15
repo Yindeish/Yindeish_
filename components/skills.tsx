@@ -5,19 +5,19 @@ export function Skills() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "HTML5", "CSS3", "JavaScript"],
+      skills: ["NextJs", "React Native", "Flutter", "React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "HTML5", "CSS3", "JavaScript"],
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Python", "Express.js", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "GraphQL"],
+      skills: ["Node.js", "Supabase", 'Firebase', "Express.js", 'Prisma', "PostgreSQL", "MongoDB",],
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git", "Docker", "AWS", "Vercel", "Figma", "Jest", "Cypress", "Webpack"],
+      skills: ["Git", "Docker", "AWS", 'GCP', 'Cloudinary', "Vercel", "Figma", "Postman", "Webpack"],
     },
     {
       title: "Soft Skills",
-      skills: ["Problem Solving", "Team Leadership", "Communication", "Project Management", "Agile", "Mentoring"],
+      skills: ["Problem Solving", "Team Leadership", "Communication"],
     },
   ]
 

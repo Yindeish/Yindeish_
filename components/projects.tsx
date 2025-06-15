@@ -6,37 +6,37 @@ import { ExternalLink, Github } from "lucide-react"
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Coinstick website",
       description:
-        "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
-      liveUrl: "#",
+        "The official landing of Coinstick. Coinstick is platform that offers exchange, blogging and learning on cryptocurrencies.",
+      image: "https://coinstick.co",
+      technologies: ["Next.js", "TypeScript", "Redux Toolkit"],
+      liveUrl: "https://coinstick.co",
       githubUrl: "#",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, team collaboration features.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-      liveUrl: "#",
+      title: "Land.ai",
+      description: "Land.ai is an application that gives recommendation of business infracture of a place. It was built with Next Js TailwindCSS, ShaCdn, Supabase and it uses Open AI model.",
+      image: "https://land-ai-orpin.vercel.app/",
+      technologies: ["NextJs", "TypeScript", "Supabase", "TailwindCSS"],
+      liveUrl: "https://land-ai-orpin.vercel.app/",
       githubUrl: "#",
     },
     {
-      title: "Weather Dashboard",
+      title: "Shaped",
       description:
-        "Beautiful weather dashboard with location-based forecasts, interactive maps, and data visualization.",
-      image: "/placeholder.svg?height=200&width=400",
-      technologies: ["Vue.js", "Python", "FastAPI", "Chart.js", "OpenWeather API"],
-      liveUrl: "#",
+        "A fashion as a service platform.",
+      image: "https://www.shapedservices.com/",
+      technologies: ["NextJs", "TypeScript", "Formspree", "TailwindCSS", "Vercel", "Ionos"],
+      liveUrl: "https://www.shapedservices.com/",
       githubUrl: "#",
     },
     {
-      title: "Portfolio Website",
-      description: "Responsive portfolio website with modern design, smooth animations, and optimized performance.",
-      image: "/placeholder.svg?height=200&width=400",
+      title: "Sandi Hq",
+      description: "A logistics service product owned by Coinstick.",
+      image: "https://danfohq.co/",
       technologies: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://danfohq.co/",
       githubUrl: "#",
     },
   ]
@@ -53,9 +53,14 @@ export function Projects() {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow group">
               <div className="aspect-video overflow-hidden">
-                <img
+                {/* <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                /> */}
+                <iframe
+                  src={project.image}
+                  style={{ border: 'none' }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
