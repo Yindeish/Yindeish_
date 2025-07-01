@@ -59,10 +59,10 @@ export function Hero() {
           </div> */}
 
           <div className="flex justify-center space-x-6">
-            <Link href={'https://github.com/yindeish'} className="hover:scale-110 transition-transform">
+            <Link target="_blank" href={'https://github.com/yindeish'} className="hover:scale-110 transition-transform">
               <Github className="h-6 w-6" />
             </Link>
-            <Link href={'<img className="w-[13em] h-[13em] rounded-full" src="https://media.licdn.com/dms/image/v2/D4D35AQGLLfIrpuN-FQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1693264205219?e=1750629600&v=beta&t=G11gFow0IHmmKEPpM5clASAXBw2rBWfZUM5HplIJo8A" alt="" />'} className="hover:scale-110 transition-transform">
+            <Link target="_blank" href={"https://www.linkedin.com/in/adam-adeshina-47b4a4246/"} className="hover:scale-110 transition-transform">
               <Linkedin className="h-6 w-6" />
             </Link>
           </div>
